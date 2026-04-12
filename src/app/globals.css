@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #E6E0D1;
+  --color-cream-dark: #D9D1BF;
+  --color-terracotta: #6E3E16;
+  --color-terracotta-light: #8B5A2B;
+  --color-moss: #323615;
+  --color-moss-light: #4A5020;
+  --color-gold: #B8860B;
+  --color-gold-light: #D4A843;
+
+  --font-montserrat: "Montserrat", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: var(--color-moss);
+  background-color: var(--color-cream);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Font utility */
+.font-sans {
+  font-family: "Montserrat", sans-serif;
+}
+
+::selection {
+  background-color: var(--color-terracotta);
+  color: var(--color-cream);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-cream);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-terracotta);
+  border-radius: 3px;
+}
+
+.gold-line {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--color-terracotta), transparent);
+}

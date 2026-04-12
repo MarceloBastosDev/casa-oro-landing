@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cp \"C:/Users/marce/OneDrive/Área de Trabalho/casa oro/logo/Grupo de 3 objetos.png\" \"C:/Users/marce/OneDrive/Área de Trabalho/Casa ORO - LandingPage/public/images/logo-horizontal.png\")",
+      "Bash(cp \"C:/Users/marce/OneDrive/Área de Trabalho/casa oro/logo/Grupo de 5 objetos.png\" \"C:/Users/marce/OneDrive/Área de Trabalho/Casa ORO - LandingPage/public/images/logo-vertical.png\")",
+      "Bash(cp \"C:/Users/marce/OneDrive/Área de Trabalho/casa oro/Nova pasta/Todas as páginas-1.jpg\" \"C:/Users/marce/OneDrive/Área de Trabalho/Casa ORO - LandingPage/public/images/hero-ceramic.jpg\")",
+      "Bash(cp \"C:/Users/marce/OneDrive/Área de Trabalho/casa oro/Nova pasta/Todas as páginas-8.jpg\" \"C:/Users/marce/OneDrive/Área de Trabalho/Casa ORO - LandingPage/public/images/soy-candle.jpg\")",
+      "Bash(cp \"C:/Users/marce/OneDrive/Área de Trabalho/casa oro/Todas as páginas-11.jpg\" \"C:/Users/marce/OneDrive/Área de Trabalho/Casa ORO - LandingPage/public/images/brand-collage.jpg\")",
+      "Bash(cp \"C:/Users/marce/OneDrive/Área de Trabalho/casa oro/Todas as páginas-14.jpg\" \"C:/Users/marce/OneDrive/Área de Trabalho/Casa ORO - LandingPage/public/images/mockup-site.jpg\")",
+      "Bash(git config:*)"
+    ]
+  }
+}
