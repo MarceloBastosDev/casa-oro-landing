@@ -27,7 +27,7 @@ export default function Materials() {
       <div className="max-w-6xl mx-auto px-6">
         <AnimatedSection>
           <div className="text-center mb-12">
-            <h2 className="font-sans text-4xl md:text-5xl font-light text-moss tracking-[0.15em]">
+            <h2 className="font-sans text-3xl md:text-5xl font-light text-moss tracking-[0.15em]">
               Materiais & Significado
             </h2>
             <div className="w-12 h-px bg-gradient-to-r from-transparent via-terracotta to-transparent mx-auto mt-6" />
@@ -35,7 +35,7 @@ export default function Materials() {
         </AnimatedSection>
 
         <AnimatedSection delay={0.1}>
-          <p className="text-center text-moss/70 font-sans text-sm md:text-base font-light leading-[1.9] max-w-3xl mx-auto mb-20">
+          <p className="text-center text-moss/70 font-sans text-sm md:text-base font-light leading-[1.9] max-w-3xl mx-auto mb-10 md:mb-20">
             Na Casa Oro, a matéria é respeitada em seu estado mais honesto. A
             cerâmica carrega a memória da terra, do fogo e do tempo. A vela
             representa a luz viva não artificial, não agressiva, mas aquela que

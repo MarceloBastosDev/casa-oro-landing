@@ -34,7 +34,7 @@ export default function CandleAtmosphere() {
     >
       {/* Glow ambiental */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-        <div className="w-[700px] h-[500px] rounded-full bg-terracotta/10 blur-[130px]" />
+        <div className="w-[90vw] h-[60vw] md:w-[700px] md:h-[500px] rounded-full bg-terracotta/10 blur-[130px]" />
       </div>
 
       <div className="relative z-10 max-w-2xl mx-auto px-6 text-center">
@@ -53,7 +53,7 @@ export default function CandleAtmosphere() {
             {count.toLocaleString("pt-BR")}
           </p>
           <p className="font-sans text-cream/30 text-[10px] tracking-[0.5em] uppercase mt-4">
-            foram velas acesas
+            velas foram acesas
           </p>
         </motion.div>
 

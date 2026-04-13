@@ -51,7 +51,7 @@ export default function Collection() {
             <p className="text-terracotta/60 font-sans text-[10px] tracking-[0.5em] uppercase mb-4">
               Coleção
             </p>
-            <h2 className="font-sans text-4xl md:text-5xl font-light text-moss tracking-[0.15em]">
+            <h2 className="font-sans text-3xl md:text-5xl font-light text-moss tracking-[0.15em]">
               Nossas Velas
             </h2>
             <div className="w-12 h-px bg-gradient-to-r from-transparent via-terracotta to-transparent mx-auto mt-6" />

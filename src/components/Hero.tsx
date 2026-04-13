@@ -34,7 +34,7 @@ export default function Hero() {
       </div>
 
       {/* ── Terracotta nav bar — oculto em mobile (Header tem hambúrguer) ── */}
-      <nav className="relative bg-terracotta z-10 h-[52px]">
+      <nav className="hidden md:block relative bg-terracotta z-10 h-[52px]">
         <div
           className="hidden md:flex items-center justify-center gap-10 h-full"
           style={{

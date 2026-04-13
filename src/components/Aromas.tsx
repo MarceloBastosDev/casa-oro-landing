@@ -4,8 +4,8 @@ import AnimatedSection from "./AnimatedSection";
 
 export default function Aromas() {
   return (
-    <section id="aromas" className="py-16 md:py-32 bg-moss text-cream">
-      <div className="max-w-3xl mx-auto px-6 text-center">
+    <section id="aromas" className="py-14 md:py-32 bg-moss text-cream">
+      <div className="max-w-3xl mx-auto px-5 md:px-6 text-center">
 
         <AnimatedSection>
           <p className="text-cream/30 font-sans text-[10px] tracking-[0.5em] uppercase mb-6">
