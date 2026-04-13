@@ -13,12 +13,12 @@ export default function About() {
   return (
     <section
       id="sobre"
-      className="relative bg-cream px-5 pt-8 pb-12 md:pt-16 md:pb-24"
+      className="relative bg-cream px-5 pt-8 pb-12 md:pt-35 md:pb-35"
       style={{ paddingLeft: undefined, paddingRight: undefined }}
     >
       {/* Wrapper com paddingLeft apenas em desktop para limpar o badge */}
       <div
-        className="md:pr-[4vw]"
+        className="md:pr-[8vw]"
         style={{ paddingLeft: "clamp(1.25rem, 8vw, calc((min(52vw, 580px) + 52px + 20px) * 0.759 + 40px))" }}
       >
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-[1fr_1fr_1.8fr] gap-4 md:gap-7 items-start">

@@ -4,9 +4,7 @@ import About from "@/components/About";
 import Collection from "@/components/Collection";
 import Aromas from "@/components/Aromas";
 import Materials from "@/components/Materials";
-import Manifesto from "@/components/Manifesto";
 import CandleAtmosphere from "@/components/CandleAtmosphere";
-import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Intro from "@/components/Intro";
 import Cursor from "@/components/Cursor";
@@ -30,9 +28,7 @@ export default function Home() {
         <Collection />
         <Aromas />
         <Materials />
-        <Manifesto />
         <CandleAtmosphere />
-        <Contact />
       </main>
       <Footer />
     </>

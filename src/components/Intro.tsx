@@ -35,7 +35,7 @@ export default function Intro() {
               Casa Oro
             </p>
             <p className="font-sans text-cream text-xl md:text-3xl font-light tracking-[0.12em] leading-loose">
-              O espaço sagrado da<br />abundância consciente.
+              Aqui, a luz não decora.<br />Ela habita.
             </p>
           </motion.div>
 

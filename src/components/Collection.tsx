@@ -89,7 +89,7 @@ export default function Collection() {
                     {candle.description}
                   </p>
                   <p className="text-[9px] text-terracotta/40 tracking-[0.2em] uppercase mt-3 font-sans">
-                    Soy Candle &middot; Burns up to 60 hours
+                    Cera de Soja &middot; Até 60h de queima
                   </p>
                   <div className="w-6 h-px bg-terracotta/20 mx-auto my-3" />
                   <p className="text-terracotta font-sans text-sm font-medium tracking-wider">

@@ -21,13 +21,13 @@ export default function Hero() {
     <section id="inicio" className="relative overflow-visible" ref={heroRef}>
 
       {/* ── Hero image com parallax ────────────────────────────────────── */}
-      <div className="relative h-[52vw] min-h-[320px] max-h-[580px] overflow-hidden">
+      <div className=" relative h-[52vw] min-h-[320px] max-h-[580px] overflow-hidden">
         <motion.div className="absolute inset-0 scale-110" style={{ y: parallaxY }}>
           <Image
             src="/images/fundo.png"
             alt="Cerâmica artesanal Casa Oro"
             fill
-            className="object-cover object-[75%_center]"
+            className="object-cover object-[85%_center]"
             priority
           />
         </motion.div>
