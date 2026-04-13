@@ -48,20 +48,14 @@ export default function Materials() {
             <AnimatedSection key={p.title} delay={0.2 + i * 0.1}>
               <div className="text-center group">
                 <div className="flex justify-center mb-6">
-                  {p.image ? (
-                    <div className="relative w-32 h-32 rounded-full overflow-hidden shadow-md">
-                      <Image
-                        src={p.image}
-                        alt={p.title}
-                        fill
-                        className="object-cover"
-                      />
-                    </div>
-                  ) : (
-                    <div className="text-terracotta/50 group-hover:text-terracotta transition-colors duration-500">
-                      {p.icon}
-                    </div>
-                  )}
+                  <div className="relative w-32 h-32 rounded-full overflow-hidden shadow-md">
+                    <Image
+                      src={p.image}
+                      alt={p.title}
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
                 </div>
                 <h3 className="font-sans text-xl md:text-2xl text-moss font-medium tracking-wide mb-2">
                   {p.title}
