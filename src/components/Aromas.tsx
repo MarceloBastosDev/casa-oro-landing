@@ -44,7 +44,7 @@ const features = [
 
 export default function Aromas() {
   return (
-    <section id="aromas" className="py-24 md:py-32 bg-moss text-cream">
+    <section id="aromas" className="py-16 md:py-32 bg-moss text-cream">
       <div className="max-w-6xl mx-auto px-6">
         <AnimatedSection>
           <div className="text-center mb-16">
@@ -67,7 +67,7 @@ export default function Aromas() {
           </p>
         </AnimatedSection>
 
-        <div className="grid md:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12">
           {features.map((f, i) => (
             <AnimatedSection key={f.title} delay={0.2 + i * 0.1}>
               <div className="text-center group">

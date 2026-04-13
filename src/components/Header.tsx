@@ -30,7 +30,7 @@ export default function Header() {
           : "-translate-y-full"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-14">
+      <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-18">
         {/* Logo */}
         <a href="#inicio" className="relative h-8 w-28">
           <Image

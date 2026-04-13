@@ -7,8 +7,28 @@ const lines = [
   { text: "Para quem entende que beleza não precisa ser explicada.", weight: "font-light text-xl md:text-2xl" },
   { text: "Para quem escolhe poucos objetos mas escolhe bem.", weight: "font-light text-xl md:text-2xl" },
   { text: "Aqui, a luz não decora.", weight: "font-medium text-2xl md:text-3xl" },
-  { text: "Ela habita.", weight: "font-semibold italic text-3xl md:text-4xl mt-2" },
+  { text: "Ela habita.", weight: "font-semibold italic text-3xl md:text-4xl" },
 ];
+
+function WordReveal({ text, delay = 0 }: { text: string; delay?: number }) {
+  const words = text.split(" ");
+  return (
+    <span>
+      {words.map((word, i) => (
+        <motion.span
+          key={i}
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-20px" }}
+          transition={{ duration: 0.45, delay: delay + i * 0.07, ease: "easeOut" }}
+          className="inline-block mr-[0.25em]"
+        >
+          {word}
+        </motion.span>
+      ))}
+    </span>
+  );
+}
 
 export default function Manifesto() {
   return (
@@ -26,16 +46,12 @@ export default function Manifesto() {
 
         <div className="space-y-6 md:space-y-8">
           {lines.map((line, i) => (
-            <motion.p
+            <p
               key={i}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-40px" }}
-              transition={{ duration: 0.8, delay: i * 0.15, ease: "easeOut" }}
               className={`font-sans text-moss leading-relaxed tracking-wide ${line.weight}`}
             >
-              {line.text}
-            </motion.p>
+              <WordReveal text={line.text} delay={i * 0.08} />
+            </p>
           ))}
         </div>
 
@@ -43,7 +59,7 @@ export default function Manifesto() {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 1, delay: 1 }}
+          transition={{ duration: 1, delay: 0.5 }}
           className="mt-12"
         >
           <div className="w-16 h-px bg-gradient-to-r from-transparent via-terracotta to-transparent mx-auto" />

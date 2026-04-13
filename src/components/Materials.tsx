@@ -40,7 +40,7 @@ const pillars = [
 
 export default function Materials() {
   return (
-    <section className="py-24 md:py-32 bg-cream">
+    <section className="py-16 md:py-32 bg-cream">
       <div className="max-w-6xl mx-auto px-6">
         <AnimatedSection>
           <div className="text-center mb-12">
@@ -60,7 +60,7 @@ export default function Materials() {
           </p>
         </AnimatedSection>
 
-        <div className="grid md:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12">
           {pillars.map((p, i) => (
             <AnimatedSection key={p.title} delay={0.2 + i * 0.1}>
               <div className="text-center group">

@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import AnimatedSection from "./AnimatedSection";
 
 const candles = [
@@ -49,7 +50,7 @@ const candles = [
 
 export default function Collection() {
   return (
-    <section id="colecao" className="py-24 md:py-32 bg-cream-dark/30">
+    <section id="colecao" className="py-16 md:py-32 bg-cream-dark/30">
       <div className="max-w-6xl mx-auto px-6">
         <AnimatedSection>
           <div className="text-center mb-16">
@@ -63,26 +64,18 @@ export default function Collection() {
           </div>
         </AnimatedSection>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-8">
           {candles.map((candle, i) => (
             <AnimatedSection key={candle.name} delay={i * 0.1}>
               <div className="group bg-cream rounded-2xl p-6 transition-all duration-500 hover:shadow-xl hover:shadow-terracotta/5 hover:-translate-y-1">
-                {/* Placeholder image */}
+                {/* Product image */}
                 <div className="relative aspect-square mb-6 rounded-xl overflow-hidden">
-                  <div className={`absolute inset-0 bg-gradient-to-br ${candle.gradient}`} />
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="relative">
-                      <div className="absolute -top-6 left-1/2 -translate-x-1/2 w-3 h-5 bg-gradient-to-t from-terracotta/60 to-gold-light/40 rounded-full blur-[2px] group-hover:scale-110 transition-transform duration-700" />
-                      <div className="absolute -top-7 left-1/2 -translate-x-1/2 w-1.5 h-3 bg-cream/60 rounded-full blur-[1px]" />
-                      <div className="absolute -top-3 left-1/2 -translate-x-1/2 w-px h-3 bg-moss/40" />
-                      <div className="w-20 h-24 bg-cream/80 rounded-lg border border-cream-dark/50 shadow-inner flex items-end justify-center pb-2">
-                        <div className="text-center">
-                          <p className="font-sans text-terracotta/60 text-[6px] tracking-[0.15em]">CASA</p>
-                          <p className="font-sans text-terracotta/80 text-[8px] font-semibold tracking-[0.2em] -mt-0.5">ORO</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  <Image
+                    src="/images/vela-caixa.jpg"
+                    alt={candle.name}
+                    fill
+                    className="object-cover"
+                  />
                 </div>
 
                 <div className="text-center">

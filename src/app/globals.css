@@ -50,3 +50,31 @@ body {
   height: 1px;
   background: linear-gradient(90deg, transparent, var(--color-terracotta), transparent);
 }
+
+/* Cursor personalizado — apenas em dispositivos com mouse */
+@media (pointer: fine) {
+  *, *::before, *::after {
+    cursor: none !important;
+  }
+}
+
+/* Badge do Hero — responsivo */
+.hero-badge {
+  height: min(52vw, 220px);
+  width: calc(min(52vw, 220px) * 0.759);
+}
+@media (min-width: 768px) {
+  .hero-badge {
+    height: calc(min(52vw, 650px) + 52px + 20px);
+    width: calc((min(52vw, 580px) + 10px + 11px) * 0.759);
+  }
+}
+
+/* Animação de tremulação da chama */
+@keyframes flicker {
+  0%   { transform: scaleX(1)    scaleY(1)    rotate(-0.5deg); opacity: 0.9; }
+  25%  { transform: scaleX(0.92) scaleY(1.04) rotate(1deg);    opacity: 1;   }
+  50%  { transform: scaleX(1.06) scaleY(0.96) rotate(-1deg);   opacity: 0.85;}
+  75%  { transform: scaleX(0.95) scaleY(1.05) rotate(0.8deg);  opacity: 1;   }
+  100% { transform: scaleX(1)    scaleY(1)    rotate(-0.5deg); opacity: 0.9; }
+}

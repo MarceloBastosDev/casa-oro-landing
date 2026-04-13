@@ -4,7 +4,7 @@ import AnimatedSection from "./AnimatedSection";
 
 export default function Contact() {
   return (
-    <section id="contato" className="py-24 md:py-32 bg-moss text-cream">
+    <section id="contato" className="py-16 md:py-32 bg-moss text-cream">
       <div className="max-w-4xl mx-auto px-6">
         <AnimatedSection>
           <div className="text-center mb-16">
@@ -18,7 +18,7 @@ export default function Contact() {
           </div>
         </AnimatedSection>
 
-        <div className="grid md:grid-cols-2 gap-16 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-start md:items-center">
           <AnimatedSection delay={0.1}>
             <div className="space-y-6">
               <div>
