@@ -1,0 +1,127 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #E6E0D1;
+  --color-cream-dark: #D9D1BF;
+  --color-terracotta: #6E3E16;
+  --color-terracotta-light: #8B5A2B;
+  --color-moss: #323615;
+  --color-moss-light: #4A5020;
+  --color-gold: #E6E0D1;
+  --color-gold-light: #E6E0D1;
+
+  --font-montserrat: "Montserrat", sans-serif;
+}
+
+:root {
+  --content-left: clamp(1.25rem, 8vw, calc((min(52vw, 580px) + 52px + 20px) * 0.759 + 40px));
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: var(--color-moss);
+  background-color: var(--color-cream);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Font utility */
+.font-sans {
+  font-family: "Montserrat", sans-serif;
+}
+
+::selection {
+  background-color: var(--color-terracotta);
+  color: var(--color-cream);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-cream);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-terracotta);
+  border-radius: 3px;
+}
+
+.gold-line {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--color-terracotta), transparent);
+}
+
+/* Cursor personalizado — apenas em dispositivos com mouse */
+@media (pointer: fine) {
+  *, *::before, *::after {
+    cursor: none !important;
+  }
+}
+
+/* Badge do Hero — responsivo */
+.hero-badge {
+  height: min(50vw, 160px);
+  width: calc(min(50vw, 160px) * 0.759);
+}
+@media (min-width: 640px) {
+  .hero-badge {
+    height: min(45vw, 240px);
+    width: calc(min(45vw, 240px) * 0.759);
+  }
+}
+@media (min-width: 768px) {
+  .hero-badge {
+    height: min(80vw, 1000px);
+    width: calc(min(42vw, 1000px) * 0.800);
+  }
+}
+@media (min-width: 1024px) {
+  .hero-badge {
+    height: min(88vw, 777px);
+    width: calc(min(52vw, 500px) * 0.759);
+  }
+}
+
+/* Posição horizontal da imagem de fundo do Hero */
+.hero-bg-image {
+  object-position: 85% 50%;
+}
+@media (min-width: 640px) {
+  .hero-bg-image {
+    object-position: 75% 50%;
+  }
+}
+@media (min-width: 768px) {
+  .hero-bg-image {
+    object-position: 50% 50%;
+  }
+}
+@media (min-width: 1024px) {
+  .hero-bg-image {
+    object-position: 50% 50%;
+  }
+}
+@media (min-width: 1280px) {
+  .hero-bg-image {
+    object-position: 50% 50%;
+  }
+}
+
+@media (min-width: 1536px) {
+  .hero-bg-image {
+    object-position: 85% 50%;
+  }
+}
+
+/* Animação de tremulação da chama */
+@keyframes flicker {
+  0%   { transform: scaleX(1)    scaleY(1)    rotate(-0.5deg); opacity: 0.9; }
+  25%  { transform: scaleX(0.92) scaleY(1.04) rotate(1deg);    opacity: 1;   }
+  50%  { transform: scaleX(1.06) scaleY(0.96) rotate(-1deg);   opacity: 0.85;}
+  75%  { transform: scaleX(0.95) scaleY(1.05) rotate(0.8deg);  opacity: 1;   }
+  100% { transform: scaleX(1)    scaleY(1)    rotate(-0.5deg); opacity: 0.9; }
+}
