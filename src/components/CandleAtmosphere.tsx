@@ -69,7 +69,7 @@ export default function CandleAtmosphere() {
           initial={{ scaleY: 0 }}
           animate={isInView ? { scaleY: 1 } : {}}
           transition={{ duration: 0.9, delay: 0.5 }}
-          className="h-px w-32 bg-gradient-to-r from-transparent via-terracotta to-transparent mx-auto mb-12"
+          className="h-px w-32 bg-gradient-to-r from-transparent via-cream/60 to-transparent mx-auto mb-12"
         />
 
         {/* CTA */}
