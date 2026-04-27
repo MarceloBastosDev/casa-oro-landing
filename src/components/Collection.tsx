@@ -43,7 +43,7 @@ const candles: Candle[] = [
     line: "Origem",
     aroma: "Vanilla",
     weight: "120g",
-    material: "Cerâmica fria + cera de coco",
+    material: "Cerâmica fria\n+ cera de coco",
     objectPosition: "center 80%",
     description:
       "Em muitas tradições, a xícara representa pausa, partilha e escuta.\nÉ o recipiente que acolhe aquilo que nutre.\n\nNa espiritualidade, recipientes simbolizam tudo o que guardamos internamente: pensamentos, emoções, energia e intenção.\n\nNesta peça, a xícara se torna um ritual cotidiano.\nUm convite para voltar a si com calma, silêncio e presença.\n\nEla representa a vida interior: aquilo que se preenche conforme escolhas, atitudes e caminhos.\n\nE deixa uma pergunta silenciosa:\nDo que você tem se alimentado por dentro?",
@@ -54,7 +54,7 @@ const candles: Candle[] = [
     line: "Origem",
     aroma: "Bamboo",
     weight: "100g",
-    material: "Cerâmica fria + cera de coco",
+    material: "Cerâmica fria\n+ cera de coco",
     objectPosition: "center 80%",
     description:
       "Inspirada no coco em seu ciclo natural, esta peça representa transformação, proteção e abundância.\n\nA base verde relembra a origem: o fruto ainda vivo, fresco e cheio de seiva.\nA parte superior em tom seco simboliza o tempo, a maturação e a sabedoria que só os processos revelam.\n\nAssim como a natureza, tudo passa por fases. Há momentos de florescer, amadurecer e entregar ao mundo o que foi cultivado por dentro.\n\nPreenchida com cera de coco, a peça honra sua própria essência ao retornar à matéria que a inspira.\n\nO aroma bamboo traz frescor, leveza e renovação.\nEvoca o vento entre as folhas, a força flexível da natureza e a calma de quem cresce sem pressa.\n\nQuando acesa, esta vela recorda que raízes profundas sustentam novos ciclos.\n\nFeita à mão para lembrar que tudo tem seu tempo de se tornar inteiro.",
@@ -65,7 +65,7 @@ const candles: Candle[] = [
     line: "Origem",
     aroma: "Vanilla",
     weight: "120g",
-    material: "Cerâmica fria + cera de coco",
+    material: "Cerâmica fria\n+ cera de coco",
     objectPosition: "center 80%",
     description:
       "Inspirada na força silenciosa da pedra, esta peça representa a base que sustenta e o tempo que transforma.\n\nNascida da terra e moldada pela passagem dos ciclos, lembra que tudo o que permanece verdadeiro se constrói com profundidade.\n\nCom aroma vanilla, sua chama aquece o ambiente com suavidade e conforto, revelando que até a matéria mais firme também guarda calor em seu centro.\n\nFeita à mão para honrar a essência que sustenta.",
@@ -76,7 +76,7 @@ const candles: Candle[] = [
     line: "Origem",
     aroma: "Vanilla",
     weight: "150g",
-    material: "Cerâmica fria + cera de coco",
+    material: "Cerâmica fria\n+ cera de coco",
     objectPosition: "center 100%",
     price: "R$ 139,90",
     description:
@@ -90,7 +90,7 @@ const candles: Candle[] = [
     line: "Ancestral",
     aroma: "Bamboo",
     weight: "120g",
-    material: "Cerâmica fria + cera de coco",
+    material: "Cerâmica fria\n+ cera de coco",
     objectPosition: "center 100%",
     price: "R$ 139,90",
     description:
@@ -102,7 +102,7 @@ const candles: Candle[] = [
     line: "Ancestral",
     aroma: "Bamboo",
     weight: "120g",
-    material: "Cerâmica fria + cera de coco",
+    material: "Cerâmica fria\n+ cera de coco",
     objectPosition: "center 100%",
     price: "R$ 139,90",
     description:
@@ -310,7 +310,7 @@ export default function Collection() {
                         <span className="font-medium">{candle.aroma}</span>
                       </p>
                       {candle.material && (
-                        <p className="text-[10px] font-sans text-moss/50 tracking-[0.2em] uppercase">
+                        <p className="text-[10px] font-sans text-moss/50 tracking-[0.2em] uppercase whitespace-pre-line">
                           <span className="font-bold">Matéria-prima:</span>{" "}
                           <span className="font-medium">{candle.material}</span>
                         </p>

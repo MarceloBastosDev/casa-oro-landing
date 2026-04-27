@@ -41,7 +41,7 @@ export default function CandleAtmosphere() {
           fill
           className="object-cover object-center"
         />
-        <div className="absolute inset-0 bg-moss/85" />
+        <div className="absolute inset-0 bg-moss/92" />
       </div>
 
       <div className="relative z-10 max-w-2xl mx-auto px-6 text-center">
